@@ -1,9 +1,20 @@
+import React, { useState } from "react";
+import data from "./components/data";
+import Photo from "./components/photo";
 
 function App() {
+
+  const [people,setPeople] = useState(data);
   return (
-    <div >
-      <h1>React App</h1>
-    </div>
+    <main>
+      <h1>Photo Gallery</h1>
+      <div className="container">
+      <div className="photo">
+           <Photo people ={people} />
+     
+        </div>
+      </div>
+    </main>
   );
 }
 

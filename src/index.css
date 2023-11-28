@@ -1,0 +1,65 @@
+body{
+
+    background-color: rgb(248, 248, 248);
+}
+
+main{
+
+    text-align: center;
+}
+
+
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    
+  
+}
+
+.photo .img-container {
+    height: 40vh;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+    
+    /* border: 2px solid gray; */
+    border-radius:50%;
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.photo .img-container img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+    width: 100%
+}
+
+.photo .img-container img:hover{
+
+   cursor:grab;
+   -webkit-transform: scale(1.25);
+    transform: scale(1.25)
+}
+
+.info {
+    margin: 1rem;
+    color: rgb(117, 117, 240);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+
+    font-size: 3rem;
+    color: purple;
+    margin-bottom: 5rem;
+    font-family: cursive;
+
+}
