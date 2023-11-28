@@ -4,7 +4,7 @@ import Photo from "./components/photo";
 
 function App() {
 
-  const [people,setPeople] = useState(data);
+  const [people] = useState(data);
   return (
     <main>
       <h1>Photo Gallery</h1>
